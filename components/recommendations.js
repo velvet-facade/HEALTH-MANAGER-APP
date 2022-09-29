@@ -12,7 +12,10 @@ export default class Recom extends React.Component {
       <View style={{ padding: 40 }}>
         <Card
           style={{ height: 150, borderRadius: 20, padding: 15, width: 250 }}>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL('https://www.youtube.com/');
+            }}>
             <Image
               source={require('../assets/Youtube-logo-png.png')}
               style={{
@@ -28,12 +31,15 @@ export default class Recom extends React.Component {
               alignItems: 'center',
               marginTop: 35,
             }}>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                Linking.openURL('https://www.youtube.com/');
+              }}>
               <Text style={{ fontFamily: 'jost' }}>ASMR</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('login')}
+              onPress={() => this.props.navigation.navigate('Info')}
               style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
               <Ionicons
                 name={'information-circle-outline'}
@@ -54,7 +60,10 @@ export default class Recom extends React.Component {
         <View style={{ marginTop: 10 }}>
           <Card
             style={{ height: 150, borderRadius: 20, padding: 15, width: 250 }}>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                Linking.openURL('https://www.youtube.com/');
+              }}>
               <Image
                 source={require('../assets/Youtube-logo-png.png')}
                 style={{
@@ -70,7 +79,10 @@ export default class Recom extends React.Component {
                 alignItems: 'center',
                 marginTop: 35,
               }}>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => {
+                  Linking.openURL('whatsapp://app');
+                }}>
                 <Text style={{ fontFamily: 'jost' }}>
                   Meditation recommendations
                 </Text>

@@ -8,14 +8,14 @@ import {
   Platform,
   StatusBar,
 } from 'react-native';
-import Header from '../components/Header';
+import DashBoard from '../components/Dashboard';
 import Recom from '../components/recommendations';
 
 export default class Home extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.droidSafeArea}>
-        <Header text="Dashboard"/>
+        <DashBoard />
         <ScrollView style={{ backgroundColor: '#fcd3d2' }}>
           <Recom />
         </ScrollView>

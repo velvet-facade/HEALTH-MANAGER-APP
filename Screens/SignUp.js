@@ -40,34 +40,18 @@ export default class SignUp extends React.Component {
               <TextInput
                 placeholder="Enter email"
                 placeholderTextColor="#87006c"
-                style={{
-                  fontFamily: 'Jost',
-                  height: Platform.OS === 'android' ? 50 : 40,
-                  marginTop: 15,
-                  padding: 15,
-                  borderRadius: 25,
-                  backgroundColor: '#cf9bc4',
-                  width: '100%',
-                }}
+                style={styles.textInput1}
               />
               <TextInput
                 placeholder="Enter password"
                 placeholderTextColor="#87006c"
                 secureTextEntry
-                style={{
-                  fontFamily: 'Jost',
-                  height: Platform.OS === 'android' ? 50 : 40,
-                  marginTop: 15,
-                  padding: 15,
-                  borderRadius: 25,
-                  backgroundColor: '#cf9bc4',
-                  width: '100%',
-                }}
+                style={styles.textInput1}
               />
               <TouchableOpacity
                 onPress={this.onLoginPress}
                 style={{
-                  backgroundColor: '#cf9bc4',
+                  backgroundColor: '#fcc7f1',
                   padding: 10,
                   borderRadius: 25,
                   marginTop: 10,
@@ -93,7 +77,7 @@ export default class SignUp extends React.Component {
               </TouchableOpacity>
               <TouchableOpacity style={styles.textInput1}>
                 <Image
-                  source={require('../tweet.jpg')}
+                  source={require('../assets/tweet.jpg')}
                   style={{ width: 21, height: 21, alignSelf: 'center' }}
                 />
                 <Text style={styles.btnText}>Login with Twitter</Text>
@@ -117,7 +101,7 @@ const styles = StyleSheet.create({
     marginTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   textInput1: {
-    backgroundColor: '#cf9bc4',
+    backgroundColor: '#fcc7f1',
     fontFamily: 'Jost',
     height: Platform.OS === 'android' ? 50 : 40,
     marginTop: 15,

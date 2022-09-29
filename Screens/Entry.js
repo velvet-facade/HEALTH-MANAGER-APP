@@ -13,8 +13,10 @@ import {
   ScrollView,
   Component,
 } from 'react-native';
+import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
 import StackNavigator from '../Navigation/StackNavigator';
+
 
 export default class Entry extends React.Component {
   render() {
@@ -92,7 +94,7 @@ export default class Entry extends React.Component {
             </TouchableOpacity>
             <TouchableOpacity style={styles.textInput1}>
               <Image
-                source={require('../tweet.jpg')}
+                source={require('../assets/tweet.jpg')}
                 style={{ width: 21, height: 21, alignSelf: 'center' }}
               />
               <Text style={styles.btnText}>Login with Twitter</Text>

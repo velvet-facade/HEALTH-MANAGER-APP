@@ -5,10 +5,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Entry from '../Screens/Entry';
 import SignUp from '../Screens/SignUp';
 import Home from '../Screens/Home';
-import Info from '../Screens/info';
+import Info from '../components/info';
 
 import { useFonts } from 'expo-font';
-
 
 const Stack = createStackNavigator();
 
@@ -24,7 +23,7 @@ export default function StackNavigator(props) {
     return (
       <NavigationContainer independent={true}>
         <Stack.Navigator
-          initialRouteName={"Home"}
+          initialRouteName={'SignUp'}
           screenOptions={{
             headerShown: false,
           }}>
